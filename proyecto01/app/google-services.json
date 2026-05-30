@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "732860810274",
+    "project_id": "a-mov-swgr2-symo",
+    "storage_bucket": "a-mov-swgr2-symo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732860810274:android:9a9a1b2349784a1213767b",
+        "android_client_info": {
+          "package_name": "com.example.movswgr22026a"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSaYzyim_DqHPVkkLcFnWocBs0juAcMlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
