@@ -48,4 +48,18 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     testImplementation("androidx.test:core-ktx:1.5.0")       // Provee el ApplicationProvider
     testImplementation("org.robolectric:robolectric:4.11.1") // Provee el RobolectricTestRunner
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Corrutinas de Kotlin para control asíncrono
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // Almacenamiento Seguro (Jetpack Crypto)
+    implementation("androidx.security:security-crypto:1.1.0-alpha06")
+
+    // Ciclo de vida y arquitectura (ViewModel y LiveData)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+
+
 }
