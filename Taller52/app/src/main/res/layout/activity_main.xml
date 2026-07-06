@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.tools.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MÓDULO: INTENTS SALIENTES"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Teléfono: 0987654321"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btnDial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="INICIAR DIAL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/ivMiniatura"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#E0E0E0"
+                android:scaleType="center"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTomarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOMAR FOTO"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#1976D2"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPERIMENTO DE PERSISTENCIA: CONTADOR"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#666666"/>
+
+            <TextView
+                android:id="@+id/tvContador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="54sp"
+                android:textStyle="bold"
+                android:textColor="#1976D2" />
+
+            <Button
+                android:id="@+id/btnIncrementar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INCREMENTAR CONTADOR (+1)" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MÓDULO: INTENTS ENTRANTES"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado: Esperando datos externos..."
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvTextoRecibido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:elevation="2dp"
+            android:text="[Aquí aparecerá el texto/enlace compartido]"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivImagenRecibida"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#E0E0E0"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenery" />
+
+    </LinearLayout>
+</ScrollView>
