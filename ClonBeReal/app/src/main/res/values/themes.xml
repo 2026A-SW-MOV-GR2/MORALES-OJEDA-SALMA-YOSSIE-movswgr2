@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ClonBeReal" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.ClonBeReal" parent="Base.Theme.ClonBeReal" />
+
+    <!-- Bordes redondeados para las fotos del feed -->
+    <style name="RoundedBerealImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <!-- Imagen circular (avatar / perfil) -->
+    <style name="CircleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

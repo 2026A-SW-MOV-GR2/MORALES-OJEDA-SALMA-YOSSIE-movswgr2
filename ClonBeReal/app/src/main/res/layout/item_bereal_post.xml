@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="28dp"
+    android:background="#000000"
+    android:paddingHorizontal="14dp"
+    android:paddingTop="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgUserAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_user_felipe"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@id/imgUserAvatar"
+        app:layout_constraintStart_toEndOf="@id/imgUserAvatar" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bereal_text_secondary"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgUserAvatar"
+        app:layout_constraintStart_toEndOf="@id/imgUserAvatar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerImages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintDimensionRatio="H,3:4"
+        app:layout_constraintTop_toBottomOf="@id/imgUserAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/RoundedBerealImage" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgSelfie"
+            android:layout_width="104dp"
+            android:layout_height="140dp"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:background="#000000"
+            app:shapeAppearanceOverlay="@style/RoundedBerealImage"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvReactionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="😮 👍 🔥"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/containerImages"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgCommentAvatar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_user_felipe"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="14dp"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:layout_constraintTop_toBottomOf="@id/tvReactionCount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCommentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bereal_text_secondary"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@id/imgCommentAvatar"
+        app:layout_constraintBottom_toBottomOf="@id/imgCommentAvatar"
+        app:layout_constraintStart_toEndOf="@id/imgCommentAvatar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

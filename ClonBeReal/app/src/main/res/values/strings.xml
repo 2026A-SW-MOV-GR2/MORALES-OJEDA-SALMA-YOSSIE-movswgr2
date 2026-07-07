@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ClonBeReal</string>
+    <string name="tab_mine">Mis Amigos</string>
+    <string name="tab_fof">Amigos de Amigos</string>
+    <string name="notif_text">Activa notificaciones para publicar a tiempo.</string>
+    <string name="notif_action">Activar</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_friends">Amigos</string>
+    <string name="nav_memories">Memories</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="done_title">Ya está bien por hoy, %1$s.</string>
+    <string name="done_subtitle">Vuelve al mundo real.</string>
+    <string name="caption_hint">Escribe un pie de foto…</string>
+    <string name="tap_caption">Toca aquí para cambiar tu leyenda</string>
+    <string name="send">ENVIAR</string>
+</resources>
